@@ -1,0 +1,10 @@
+
+public class ItemShop {
+	public String sno;
+	public String sname;
+	public int evalute;
+	public float msales;
+	public float ssales;
+	public String idpicture;
+	public String classification;
+}

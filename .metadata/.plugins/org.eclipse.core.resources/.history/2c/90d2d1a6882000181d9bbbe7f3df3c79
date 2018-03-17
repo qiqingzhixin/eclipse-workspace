@@ -1,0 +1,36 @@
+
+public class ItemShop {
+	public String sno;
+	public String sname;
+	public int evalute;
+	public float msales;
+	public float ssales;
+	public String idpicture;
+	public String classification;
+	public String toString() {
+		return "('"+sno+"','"+sname+"',"+evalute+","+msales+","+ssales+",'"+idpicture+"','"+classification+"')";
+	}
+	public ItemShop() {
+		
+	}
+	public ItemShop(String sno,String sname,int evalute,float msales,float ssales,String idpicture,String classification) {
+		this.sno=sno;
+		this.sname=sname;
+		this.evalute=evalute;
+		this.msales=msales;
+		this.ssales=ssales;
+		this.idpicture=idpicture;
+		this.classification=classification;
+	}
+	public static void main(String[] args) {
+		ItemShop is=new ItemShop();
+		is.sno="123";
+		is.sname="—Û—Û";
+		is.evalute=4;
+		is.msales=(float) 3.4;
+		is.ssales=(float) 4.4;
+		is.idpicture="lujin";
+		is.classification="√¿ ≥";
+		System.out.println(is);
+	}
+}

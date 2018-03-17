@@ -1,0 +1,10 @@
+
+public class Textone {
+	public static void main(String args[]) {
+		String str="欢迎大家访问http://www.xiaojiang.com 了解，参观公司";
+		String regex="(http://www)\\56{1}\\w+\56{1}\\p{Alpha}+";
+		System.out.printf("替换\n\"%s\"\n中的网站链接信息后得到的字符串：\n",str);
+		str=str.replace(regex, "******");
+		System.out.println(str);
+	}
+}
